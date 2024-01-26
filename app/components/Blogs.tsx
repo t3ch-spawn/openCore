@@ -10,6 +10,7 @@ import Blog_Card from "./reusables/Blog_Card";
 import rocket from "../../public/rocket.png";
 import lightning from "../../public/lightning.png";
 import bg from "../../public/heroBg.svg";
+import blogs from "../../public/blogs.json";
 
 const blogTabs = [
   { name: "All Blogs", active: true },
@@ -19,39 +20,6 @@ const blogTabs = [
 ];
 
 const images = [Facebook, LinkedIn, Instagram, behance, dribble];
-
-const cards = [
-  {
-    name: "Charley Den",
-    heading: "Enhance UX: Designing Better UX/UI",
-    src: rocket,
-  },
-  {
-    name: "Smith Jack",
-    heading: "Designing Impression: The Power of First Impressions",
-    src: lightning,
-  },
-  {
-    name: "Breth Mathew",
-    heading: "Case Study: FlipX, an Investment Attraction Startup",
-    src: rocket,
-  },
-  {
-    name: "Lilly Bella",
-    heading: "Mastering Startup Branding: Expanding Digital Presence",
-    src: lightning,
-  },
-  {
-    name: "Gigi Selena",
-    heading: "Designing for Productivity: Efficiency Rules",
-    src: lightning,
-  },
-  {
-    name: "David Travis ",
-    heading: "Kickstart your UI/UX design career?",
-    src: rocket,
-  },
-];
 
 export default function Blogs() {
   return (
@@ -123,13 +91,15 @@ export default function Blogs() {
 
       {/* Container for all the cards */}
       <div className="w-[80%] -1024:w-[90%] justify-center justify-items-center grid grid-cols-[repeat(auto-fit,_minmax(330px,_330px))] gap-8">
-        {cards.map((card, idx) => {
+        {blogs.map((card, idx) => {
           return (
             <Blog_Card
               key={idx}
-              name={card.name}
-              heading={card.heading}
-              src={card.src}
+              tags={card.tags}
+              heading={card.title}
+              readTime={card.readTime}
+              date={card.date}
+              src={card.image}
             />
           );
         })}
