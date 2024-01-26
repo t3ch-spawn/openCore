@@ -88,7 +88,7 @@ export default function Blogs() {
         {/* Container for card */}
         <div className="max-w-[600px] flex flex-col gap-4 bg-[#F8F8F8] w-full py-8 pl-8">
           <p className="text-xs text-[#294F74] font-[500]">
-            FREELANCING 101 <span>•</span> William George
+            FREELANCING 101 <span className="mx-4">●</span> William George
           </p>
 
           <p className="text-3xl font-[500] max-w-[400px] text-[#344054] leading-[150%]">
@@ -96,7 +96,7 @@ export default function Blogs() {
           </p>
 
           <p className="text-xs text-[#294F74] font-[500] mt-[80px]">
-            15 Min Read <span>•</span> 23 - 05 -2023
+            15 Min Read <span>●</span> 23 - 05 -2023
           </p>
         </div>
       </div>
