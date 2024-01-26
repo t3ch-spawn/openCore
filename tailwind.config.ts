@@ -15,10 +15,16 @@ const config: Config = {
       },
     },
 
-    fontFamily:{
-      roboto: ['Roboto', 'sans-serif'],
-    }
+    fontFamily: {
+      roboto: ["Roboto", "sans-serif"],
+    },
+    screens: {
+      "-1024": { max: "1024px" },
+      "-900": { max: "900px" },
+      "-650": { max: "650px" },
+    },
   },
+
   plugins: [],
 };
 export default config;
