@@ -63,7 +63,7 @@ export default function Blogs() {
         <div className="flex items-center gap-6  flex-wrap justify-center">
           {blogTabs.map((tab, idx) => {
             return (
-              <div
+              <button
                 key={idx}
                 className={`${
                   tab.active
@@ -72,7 +72,7 @@ export default function Blogs() {
                 } font-[500] rounded-[30px] px-3 p-1`}
               >
                 {tab.name}
-              </div>
+              </button>
             );
           })}
         </div>

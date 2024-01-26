@@ -11,14 +11,9 @@ export default function Home() {
   return (
     <main className="font-roboto">
       <Hero />
-
-        <Blogs />
-    
-
       <Blogs />
       <Transform />
-              <Footer />
-
+      <Footer />
     </main>
   );
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import bg from "../../public/heroBg.svg";
+import bgMobile from "../../public/transformBg.svg";
 import Image from "next/image";
 
 export default function Transform() {
@@ -16,12 +17,19 @@ export default function Transform() {
             audience.
           </p>
         </div>
-
         <div className="border-white rounded-[50%] h-[200px] w-[200px] -650:h-[150px] -650:w-[150px] flex items-center justify-center border-2">
           <p className="font-[500] -650:text-sm">Let's Work Together!</p>
         </div>
-
-        <Image className="absolute h-full top-0 left-0 -850:object-cover" alt="" src={bg} />
+        <Image
+          className="absolute md:flex hidden h-full top-0 left-0 object-cover"
+          alt=""
+          src={bg}
+        />
+        <Image
+          className="absolute flex md:hidden h-full top-0 left-0 object-cover"
+          alt=""
+          src={bg}
+        />
       </div>
     </div>
   );
