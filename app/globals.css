@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-.hero-bg{
-  background-image: url;
+.heroBg {
+  background-image: url("../public/heroBg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
