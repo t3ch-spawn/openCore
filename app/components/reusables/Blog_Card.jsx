@@ -9,7 +9,7 @@ export default function Blog_Card(props) {
       <div className="card-icon-cont flex justify-center items-center">
         <Image
           src={props.src}
-          className="max-w-[180px] max-h-[180px]"
+          className="max-w-[180px] max-h-[180px] -650:max-w-[100pxgit ]"
           alt="rocket"
         />
       </div>
@@ -20,7 +20,7 @@ export default function Blog_Card(props) {
           FREELANCING 101 <span className="mx-4">●</span> {props.name}
         </p>
 
-        <p className="text-2xl font-[500] max-w-[400px] text-[#344054] leading-[150%]">
+        <p className="text-2xl -650:text-xl font-[500] max-w-[400px] text-[#344054] leading-[150%]">
           {props.heading}
         </p>
 

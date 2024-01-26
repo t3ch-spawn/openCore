@@ -79,7 +79,7 @@ export default function Blogs() {
       {/* Container with icons and card */}
       <div className="flex -900:flex-col w-[80%] -1024:w-[90%] justify-around overflow-hidden rounded-3xl border-[white] border-[13px]">
         {/* Cont for images */}
-        <div className="flex gap-4 items-center justify-center blog-icons-cont w-full py-8">
+        <div className="flex flex-wrap gap-4 items-center justify-center blog-icons-cont w-full py-8">
           {images.map((img) => {
             return (
               <Image
