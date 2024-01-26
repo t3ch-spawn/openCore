@@ -5,8 +5,8 @@ import pc from "../../public/pc.jpg";
 
 const Hero = () => {
   return (
-    <div className="px-24 heroBg flex flex-col justify-center gap-10 items-center">
-      <nav className="flex items-center border border-neutral-300 rounded-full w-fit mt-10">
+    <div className="px-24 pb-48 heroBg flex flex-col justify-center gap-10 items-center">
+      <nav className="flex items-center border border-neutral-300 rounded-full w-fit mt-10 bg-white">
         <div className="border-r border-neutral-300 px-5 py-3">
           <Image src={logo} alt="logo" className="w-5 h-5 object-cover" />
         </div>

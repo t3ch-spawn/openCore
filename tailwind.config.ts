@@ -15,9 +15,15 @@ const config: Config = {
       },
     },
 
+<<<<<<< HEAD
     fontFamily: {
       roboto: "Roboto",
     },
+=======
+    fontFamily:{
+      roboto: ['Roboto', 'sans-serif'],
+    }
+>>>>>>> 1af64989a4b4324a28c51fb6d061f5561b14ca7a
   },
   plugins: [],
 };

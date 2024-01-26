@@ -54,7 +54,7 @@ const cards = [
 
 export default function Blogs() {
   return (
-    <div className="w-full flex flex-col gap-10 items-center">
+    <div className="w-full flex flex-col gap-10 mt-20 items-center">
       {/* Container for heading and tabs */}
       <div className="flex justify-between w-[80%]">
         <h2 className="text-[#344054] text-3xl font-[700]">Blogs</h2>
@@ -102,7 +102,7 @@ export default function Blogs() {
       </div>
 
       {/* Container for all the cards */}
-      <div className="w-[80%] justify-center justify-items-center grid grid-cols-[repeat(auto-fit,_minmax(350px,_350px))] gap-8">
+      <div className="w-[80%] justify-center justify-items-center grid grid-cols-[repeat(auto-fit,_minmax(330px,_330px))] gap-8">
         {cards.map((card) => {
           return (
             <Blog_Card name={card.name} heading={card.heading} src={card.src} />
