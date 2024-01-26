@@ -9,6 +9,7 @@ import LinkedIn from "../../public/LinkedIn.png";
 import Blog_Card from "./reusables/Blog_Card";
 import rocket from "../../public/rocket.png";
 import lightning from "../../public/lightning.png";
+import bg from "../../public/heroBg.svg";
 
 const blogTabs = [
   { name: "All Blogs", active: true },
@@ -60,9 +61,10 @@ export default function Blogs() {
         <h2 className="text-[#344054] text-4xl font-[700]">Blogs</h2>
 
         <div className="flex items-center gap-6  flex-wrap justify-center">
-          {blogTabs.map((tab) => {
+          {blogTabs.map((tab, idx) => {
             return (
               <div
+                key={idx}
                 className={`${
                   tab.active
                     ? "text-[#294F74] border-[#294F74] bg-[#EDF2F5] border-[1px] "
@@ -77,18 +79,30 @@ export default function Blogs() {
       </div>
 
       {/* Container with icons and card */}
-      <div className="flex -900:flex-col w-[80%] -1024:w-[90%] justify-around overflow-hidden rounded-3xl border-[white] border-[13px]">
+      <div className="flex -900:flex-col w-[80%] -1024:w-[90%] -650:w-full justify-around overflow-hidden rounded-3xl border-[white] border-[13px] relative">
+        <Image
+          className="-900:block hidden absolute h-full top-0 left-0 w-full object-cover"
+          alt=""
+          src={bg}
+        />
         {/* Cont for images */}
-        <div className="flex flex-wrap gap-4 items-center justify-center blog-icons-cont w-full py-8">
-          {images.map((img) => {
+        <div className=" flex flex-wrap gap-4 items-center justify-center -650:pb-20 blog-icons-cont w-full py-8 relative">
+          {images.map((img, idx) => {
             return (
               <Image
+                key={idx}
                 className="max-w-[60px] -650:max-w-[45px] flex-wrap"
                 src={img}
                 alt="image"
               />
             );
           })}
+
+          <Image
+            className="-900:hidden absolute h-full top-0 left-0 object-contain w-full"
+            alt=""
+            src={bg}
+          />
         </div>
 
         {/* Container for card */}
@@ -109,9 +123,14 @@ export default function Blogs() {
 
       {/* Container for all the cards */}
       <div className="w-[80%] -1024:w-[90%] justify-center justify-items-center grid grid-cols-[repeat(auto-fit,_minmax(330px,_330px))] gap-8">
-        {cards.map((card) => {
+        {cards.map((card, idx) => {
           return (
-            <Blog_Card name={card.name} heading={card.heading} src={card.src} />
+            <Blog_Card
+              key={idx}
+              name={card.name}
+              heading={card.heading}
+              src={card.src}
+            />
           );
         })}
       </div>
