@@ -2,9 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.blog-icons-cont {
+  background: linear-gradient(180deg, #fff 0%, #f4f4f4 100%), #f8f8f8;
+}
+
+.card-icon-cont {
+  background: linear-gradient(180deg, #fff 0%, #f4f4f4 100%);
+}
 .heroBg {
   background-image: url("../public/heroBg.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
 }
