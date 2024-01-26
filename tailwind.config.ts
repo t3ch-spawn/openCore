@@ -14,17 +14,21 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
 
-      screens: {
-        "-1024": { max: "1024px" },
-        "-900": { max: "900px" },
-        "-850": { max: "850px" },
-        "-650": { max: "650px" },
-      },
+
+          screens: {
+      "-1024": { max: "1024px" },
+      "-900": { max: "900px" },
+      "-650": { max: "650px" },
+    },
     },
 
     fontFamily: {
       roboto: ["Roboto", "sans-serif"],
     },
+
+
+
+
   },
 
   plugins: [],
