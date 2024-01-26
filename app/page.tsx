@@ -1,8 +1,10 @@
 import Image from "next/image";
+import Blogs from "./components/Blogs";
 
 export default function Home() {
-  return <>
-  
-  <div className="text-4xl text-[red]">HEllo world</div>
-  </>;
+  return (
+    <>
+      <Blogs />
+    </>
+  );
 }
