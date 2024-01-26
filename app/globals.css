@@ -12,8 +12,12 @@
   background: linear-gradient(180deg, #fff 0%, #f4f4f4 100%);
 }
 .heroBg {
-  background-image: url("../public/heroBg.svg");
+  background-image: url("../public/heroBg.svg");  
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.transform-cont {
+  background: linear-gradient(180deg, #2F5478 0%, #22405C 100%);
 }

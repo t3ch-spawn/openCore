@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Blog_Card(props) {
   return (
     // Container for whole card
-    <div className="max-w-[330px] border-[13px] border-white">
+    <div className="max-w-[330px] -650:max-w-[280px] border-[13px] border-white shadow-lg">
       {/* Container for image */}
       <div className="card-icon-cont flex justify-center items-center">
         <Image
